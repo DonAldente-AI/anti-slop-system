@@ -1,9 +1,9 @@
-# Anti-Slop System (ASS)
+# Anti-Slop System (ASS) v3.0
 ## A Multi-Agent Pipeline for Preventing AI Content Slop
 
 ### 🎯 What This Solves
 
-AI-generated content often suffers from "slop" - generic, template-driven, personality-free writing that sounds robotic and adds no real value. This system uses a multi-agent approach to iteratively detect and eliminate slop characteristics until content sounds authentically human.
+AI-generated content often suffers from "slop" - generic, template-driven, personality-free writing that sounds robotic and adds no real value. This system uses a multi-agent approach to iteratively detect and eliminate slop characteristics while **preserving appropriate tone** for different content types.
 
 ### 🔬 The Problem with AI Content
 
@@ -28,48 +28,44 @@ Most AI writing exhibits predictable patterns:
 
 - **DRAFTER stays naive** - Never sees slop feedback to prevent gaming the system
 - **REDRAFT SPECIALIST** gets both original prompt + brutal feedback
+- **Tone agnosticism** - Preserves appropriate voice instead of pattern compression
 - **Separation of concerns** - Each agent has a single, clear purpose
 - **Max 3 iterations** to prevent infinite loops
 - **Brutal honesty** in slop detection
 
 ### 📊 Test Results
 
-#### Test 1: Work-From-Home Productivity
-**Initial Draft (7.5/10 slop):**
-- Generic listicle format with predictable headers
-- Bullet points and bold statements
-- Zero personal experience or failures
-- Corporate consultant tone
+ASS v3.0 successfully preserves appropriate tone while eliminating AI patterns:
 
-**After Redraft (2/10 slop):**
-- Personal narrative with real failures
-- Specific examples and contradictions
-- Authentic voice and honest struggles
-- Eliminated template structure
+#### ✅ Technical Content (WiFi Setup)
+**8/10 slop → Professional instruction tone**
+- Removed generic "step-by-step guide" templates
+- Added real troubleshooting experience  
+- Preserved technical helpfulness without personal anecdotes
 
-#### Test 2: Blockchain Explanation (Concise)
-**Initial Draft (6.5/10 slop):**
-- Textbook voice with buzzword bingo
-- "Essentially" hedge language
-- Perfect world fantasy without problems
+#### ✅ Business Advice (Risk Assessment) 
+**8.25/10 slop → Professional advisory tone**
+- Eliminated "Here's how to systematically" consultant speak
+- Added genuine business complexity and edge cases
+- Maintained authoritative guidance without corporate buzzwords
 
-**After Redraft (1.5/10 slop):**
-- Conversational tone addressing real problems
-- Honest about issues ("overhyped garbage")
-- Specific use cases with stakes
+#### ✅ Academic Content (ML Overfitting)
+**7.5/10 slop → Scholarly research voice**
+- Removed textbook formula openings
+- Added individual scholarly perspective and research context
+- Preserved formal academic tone without generic authority
 
-#### Test 3: Cooking for Beginners
-**Initial Draft (7.5/10 slop):**
-- Classic AI content template
-- Generic advice everyone's heard
-- Forced quirky personality
-- Zero real cooking experience
+#### ✅ Marketing Content (Product Description)
+**8/10 slop → Authentic selling voice**  
+- Eliminated "Transform your..." corporate jargon
+- Removed emoji bombardment and buzzword spam
+- Maintained persuasive effectiveness with honest approach
 
-**After Redraft (2/10 slop):**
-- Personal failures and specific disasters
-- Actual technique with temperatures/timing
-- Authentic voice and real recommendations
-- Cultural context and learning journey
+#### ✅ Creative Content (Oil Painting)
+**7/10 slop → Artistic guidance tone**
+- Avoided forcing personal narrative into instructional content
+- Preserved helpful creative guidance appropriate for art education
+- Maintained encouraging but realistic artistic voice
 
 ### 🚀 Implementation
 
@@ -111,6 +107,20 @@ See `/agents/` directory for complete agent prompts.
 - Specific examples
 - Natural conversation
 - Authentic tone
+
+## 🎨 ASS v3.0: Tone Agnosticism Breakthrough
+
+**The Problem:** Earlier versions forced all content into "personal narrative" tone, creating a different kind of pattern compression.
+
+**The Solution:** Tone-agnostic redrafting that preserves the appropriate voice for each content type:
+
+- **Technical** → Professional instruction (not personal stories)
+- **Academic** → Scholarly authority (not folksy anecdotes)  
+- **Marketing** → Genuine selling (not manufactured personality)
+- **Creative** → Artistic guidance (not forced regional dialect)
+- **Business** → Advisory expertise (not neighbor narratives)
+
+**See:** `/agents/tone-agnostic-redraft.md` for complete implementation.
 
 ### 🎭 Why Keep the Drafter Naive?
 
