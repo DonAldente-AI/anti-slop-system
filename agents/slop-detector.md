@@ -80,3 +80,29 @@ Analyze for slop characteristics and give a brutal honest assessment.
 - What real human experience is missing?
 - Where could personal failure/struggle be added?
 - How to make content feel lived-in vs. theoretical?
+### Punctuation-as-Contrast (Specific Pattern)
+AI frequently uses punctuation to create contrast where a human writer would use a conjunction. Flag these:
+
+- **Em dashes separating contrasting clauses**: "The future isn't better hardware — it's eliminating hardware entirely"
+- **Period-separated contrasting sentences**: "Trust is earned slowly. Lost instantly."
+- **Two-sentence ironic juxtaposition**: "The product launched. No one noticed."
+- **Short fragments after a dash**: "Open source is powerful — but nobody maintains it."
+
+**Detection prompt addition:**
+
+
+### Punctuation-as-Contrast (Specific Pattern)
+AI frequently uses punctuation to create contrast where a human writer would use a conjunction. Flag these:
+
+- **Em dashes separating contrasting clauses**: "The future is not better hardware — it is eliminating hardware entirely"
+- **Period-separated contrasting sentences**: "Trust is earned slowly. Lost instantly."
+- **Two-sentence ironic juxtaposition**: "The product launched. No one noticed."
+
+**Detection prompt addition:**
+```
+Contrast-via-Punctuation (1-10): How often does this use em dashes or period
+breaks to create contrast where conjunctions (but, yet, while, though) would
+flow better? Flag em dashes between contrasting ideas, two consecutive short
+sentences where one reverses the other, and fragments that continue a thought
+interrupted by a dash.
+```

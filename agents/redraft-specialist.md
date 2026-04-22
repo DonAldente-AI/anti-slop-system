@@ -106,3 +106,50 @@ are overhyped garbage.
 - Include what doesn't work, not just what does
 - Address common beginner mistakes
 - Share learning process, not just final wisdom
+### Contrast: Punctuation-to-Conjunction Replacement
+When the slop detector flags contrast-via-punctuation, replace the punctuation with the appropriate conjunction to create smooth compound sentences:
+
+**"but"** — direct opposition or negation:
+- "The future is not better hardware — it is eliminating hardware entirely." → "The future is not better hardware but eliminating the need for hardware entirely."
+- "You can automate the task — you cannot automate the judgment." → "You can automate the task but not the judgment."
+- "Trust is earned slowly. Lost instantly." → "Trust is earned slowly but lost instantly."
+
+**"yet"** — unexpected or ironic contrast:
+- "Open source is powerful. No one maintains it." → "Open source is powerful, yet no one maintains it."
+- "The product launched. No one noticed." → "The product launched, yet no one noticed."
+- "Tests caught the bug. It shipped anyway." → "Tests caught the bug, yet it shipped anyway."
+- "Everyone agrees on the problem — no one agrees on the solution." → "Everyone agrees on the problem, yet no one agrees on the solution."
+
+**"and yet"** — emphatic ironic contrast:
+- "The startup raised $10M. It has zero users." → "The startup raised $10M and yet has zero users."
+
+**"while"** — simultaneous or parallel contrast:
+- "Encryption protects the data — the metadata betrays it." → "Encryption protects the data while the metadata betrays it."
+- "The API is clean. The docs are a disaster." → "The API is clean while the docs are a disaster."
+- "The demo was flawless — production broke immediately." → "The demo was flawless while production broke immediately."
+
+**"though / although"** — concessive contrast:
+- "Venture capital fuels growth. It warps priorities." → "Venture capital fuels growth, though it warps priorities."
+- "The tool is free — it costs your data." → "The tool is free, though it costs your data."
+
+**Transitional phrases** — for clause-level contrast:
+- "meanwhile" → "VCs fund hardware wallets; meanwhile, software renders them obsolete"
+- "however" → "People trust hardware; however, protocols are more reliable"
+- "instead" → "Do not upgrade your hardware; instead, eliminate it"
+
+**Subordinating structures** — for sentence-level contrast:
+- "while" → "While everyone focuses on better hardware, smart builders eliminate it"
+- "because" → "Hardware wallets will fail because software wallets scale"
+- "although" → "Although hardware feels safer, protocols provide true security"
+
+**Conjunction selection guide:**
+- **"but"** → direct opposition, negation
+- **"yet"** → unexpected/ironic contrast
+- **"and yet"** → emphatic ironic contrast
+- **"while"** → simultaneous actions or states
+- **"though"** → concession or admission
+- **"meanwhile"** → parallel/simultaneous action
+- **"however"** → formal contrast
+- **"instead"** → alternative action
+- **"because"** → causal explanation
+- **"although"** → concessive contrast
